@@ -1,0 +1,72 @@
+@import "./min";
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.DaysearchCard {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #2d2d2d;
+  top: 2.35rem;
+  left: 0;
+  z-index: 2;
+  .DaysearchCard_all {
+    margin-top:0.64rem;
+    color: #acacac;
+    font-size:0.59rem;
+    .all_title {
+      display: flex;
+      text-align: center;
+      line-height:1.17rem;
+      border-top: 1px solid #424242;
+      border-bottom: 1px solid #424242;
+      .all_title_left {
+        margin-top:0.29rem;
+        flex: 1;
+        height: 0.59rem;
+        line-height:0.59rem;
+        border-right: 1px solid #424242;
+
+      }
+      .all_title_right {
+        flex: 1;
+      }
+    }
+    .all_searchList{
+      margin: 0 1.57rem;
+      text-align: center;
+      min-height: 1.87rem;
+      .list_ones{
+        padding: 0  0.8rem;
+        display: inline-block;
+        background-color: #444444;
+        margin: 0.32rem;
+      }
+    }
+    .all_popularSearches{
+      text-align: center;
+      border-top: 1px solid #424242;
+      border-bottom: 1px solid #424242;
+    }
+    .popularSearches_List{
+      margin: 0 1.57rem;
+      text-align: center;
+      .list_ones{
+        padding: 0  0.8rem;
+        display: inline-block;
+        background-color: #444444;
+        margin: 0.32rem;
+
+      }
+    }
+  }
+}

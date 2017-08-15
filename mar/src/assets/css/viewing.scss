@@ -1,0 +1,156 @@
+@import "min";
+
+a {
+  color: #fff;
+}
+
+.viewing {
+  margin-top: 2.2rem;
+}
+
+.viewing .swiper-container {
+  height: 8rem;
+  padding-bottom: 0rem;
+  border-bottom: 1px solid #2b323c;
+  background: #2d2d2d;
+}
+
+.viewing .swiper-container img {
+  height: 100%;
+  width: 100%;
+}
+
+.viewing-list {
+  overflow-y: scroll;
+  position: absolute;
+  top: 9.8rem;
+  left: 0;
+  right: 0;
+  bottom: 2rem;
+  background: #424242;
+}
+
+.viewing-list .list-block {
+  margin: 0px;
+}
+
+.viewing-list .list-block ul {
+  background-color: transparent;
+  border-top: 1px solid #2b323c;
+}
+
+.viewing-list .list-block ul:before {
+  background-color: transparent;
+}
+
+.viewing-list .list-block ul li {
+  border-bottom: 1px solid #363636;
+  padding: .5rem 0;
+}
+
+.viewing-list .list-block .item-inner {
+  padding: 0px;
+  padding-right: .75rem;
+}
+
+.viewing-list .list-block ul li .item-subtitle span {
+  float: right;
+}
+
+.viewing-list .list-block ul li .item-subtitle {
+  margin-top: 1.5rem;
+}
+
+.viewing-list ul li .item-content .item-media {
+  padding: 0px;
+}
+
+.viewing-list ul li .item-content .item-media img {
+  width: 7.375rem;
+  height: 4.6875rem;
+}
+
+.viewing-list .list-block .item-inner::after {
+  background: transparent;
+}
+
+.viewing-list .list-block ul:after {
+  background: transparent;
+}
+
+.viewing-list .item-subtitle {
+  font-size: .6rem;
+}
+
+.viewing-list .item-subtitle img {
+  width: 15px;
+  height: 10px;
+  float: right;
+  margin-top: 0.3rem;
+  margin-right: 0.3rem;
+}
+
+// 新闻
+.news {
+  margin-top: 2.5rem;
+}
+
+.news .news-box {
+
+  height: pxTorem(1334);
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 1rem 0.5rem;
+}
+
+.news .news-box i {
+  width: 3rem;
+  height: 5px;
+  background: #ffb800;
+  display: block;
+  margin: 0.5rem auto;
+}
+
+.news .news-box span {
+  display: block;
+  font-size: 0.5rem;
+}
+
+.news .news-box p {
+  text-align: left;
+  text-indent: 1rem;
+}
+
+.news .news-box img {
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.news .news-box .news-explain {
+  margin-top: 2rem;
+}
+
+.news .news-box .news-explain p {
+  text-align: left;
+  font-size: 0.5rem;
+  text-indent: 0;
+}
+
+.news .news-views img {
+  width: 20px;
+  height: 10px;
+  margin-right: .3rem;
+}
+
+.news p.news-views {
+  text-align: right;
+  font-size: .7rem;
+}
+
+.swiper-pagination {
+  text-align: right;
+}
+
+.swiper-container-horizontal > .swiper-pagination {
+  bottom: 1rem;
+}

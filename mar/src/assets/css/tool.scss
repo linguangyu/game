@@ -1,0 +1,423 @@
+@import "min";
+.tool .buttons-tab{
+ background-color: #323542;
+ box-shadow: 1px 5px 20px black;
+}
+.tool .buttons-tab .button.active{
+    color: #fff;
+    border-color:#fff;
+}
+.tool .content-block{
+    margin-top:-0.1rem ;
+    padding: 0px;
+}
+.tool .list-block{
+    margin: 0px;
+    border-radius: 0px;
+}
+.tool .list-block ul {
+    background-color: transparent;
+}
+.tool .list-block .item-content{
+    padding: 0.5rem 0.75rem;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('../../page/tool/font/iconfont.eot');
+  src: url('../../page/tool/font/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../../page/tool/font/iconfont.woff') format('woff'),
+  url('../../page/tool/font/iconfont.ttf') format('truetype'),
+  url('../../page/tool/font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+$bezierEdges: cubic-bezier(.19,.69,.4,1);
+$bezierElements: cubic-bezier(.19,.69,.4,1);
+$duration: 1.5s;
+$numberOfSingleElements: 8; // sync with HTML
+$c1: #f39c12;
+$c2: #e67e22;
+$c3: #1abc9c;
+
+.frame {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  overflow: hidden;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.edges {
+  position: absolute;
+  z-index: 10;
+  top: 0px;
+  left: 0px;
+  right:0px;
+  bottom: 0px;
+  text-align: center;
+  color: #FFB800;
+  .iconfont{
+    border: 0;
+    color: #FFA800;
+  }
+  .model-top{
+    display: block;
+    width: 50%;
+    height: 15%;
+    position: absolute;
+    top: 20%;
+    left:25%;
+    background: transparent;
+  }
+  .model-left{
+    display: block;
+    width: 50%;
+    height: 15%;
+    position: absolute;
+    top: 40%;
+    left:0;
+    background:transparent;
+  }
+  .model-bottom{
+    display: block;
+    width: 50%;
+    height: 15%;
+    position: absolute;
+    bottom: 20%;
+    left:25%;
+    background:transparent;
+  }
+  p{
+    font-size: pxTorem(45);
+    margin-bottom: pxTorem(20);
+  }
+  span{
+    font-size: pxTorem(28) ;
+  }
+  .vertical {
+    position: absolute;
+    width: 100%;
+    height: pxTorem(670);
+
+    &.t {
+      top: 0;
+      left: 0;
+      padding-top: pxTorem(274);
+      background: url("../../assets/img/daolisanjiao.png") no-repeat;
+      background-size:100%;
+      animation: edge-t $duration $bezierEdges  alternate forwards;
+    }
+
+
+
+    &.b {
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding-top: pxTorem(286);
+      background: url("../../assets/img/shouyesanjiao.png") no-repeat;
+      background-size:100%;
+      animation: edge-b $duration $bezierEdges  alternate forwards;
+    }
+
+  }
+  .across{
+    position: absolute;
+    height: 100%;
+    width: pxTorem(375);
+    padding-top: pxTorem(579);
+    &.l {
+      top: 0;
+      left: 0;
+      background: url("../../assets/img/zuobiansanjiao.png") no-repeat;
+      background-size:100%;
+      animation: edge-l $duration $bezierEdges  alternate forwards;
+    }
+
+    &.r {
+      top: 0;
+      right: 1px;
+      background: url("../../assets/img/youbiansanjiao.png") no-repeat;
+      background-size:100%;
+      animation: edge-r $duration $bezierEdges  alternate forwards;
+    }
+  }
+
+}
+
+@keyframes edge-t {
+  0%, 20% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes edge-l {
+  0%, 20% {
+    transform: translateX(-130px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes edge-r {
+  0%, 20% {
+    transform: translateX(120px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes edge-b {
+  0%, 20% {
+    transform: translateY(200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.elements {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 47.5%;
+  left: 46%;
+
+  .square {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    left: 5px;
+    background: url('../../page/tool/img/gonji1.png')no-repeat;
+    background-size:100% ;
+
+
+    &.small {
+      width: 10px;
+      height: 10px;
+      top: 10px;
+      left: 10px;
+    background: url('../../page/tool/img/gonju2.png')no-repeat;
+      background-size:100% ;
+
+    }
+
+    &.big {
+      width: 30px;
+      height: 30px;
+      top: 0;
+      left: 0;
+      background: url('../../page/tool/img/gonju3.png')no-repeat;
+      background-size:100% ;
+
+    }
+    @for $i from 1 through $numberOfSingleElements {
+      &#{$i} {
+        animation: square+($i) $duration $bezierElements  alternate;
+      }
+    }
+
+  }
+
+  .circle {
+    position: absolute;
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    left: 5px;
+      background: url('../../page/tool/img/gonju4.png')no-repeat;
+    background-size:100% ;
+
+
+    &.small {
+      width: 10px;
+      height: 10px;
+      border-width: 2px;
+      top: 10px;
+      left: 10px;
+      background: url('../../page/tool/img/gonju5.png')no-repeat;
+      background-size:100% ;
+
+    }
+
+    &.big {
+      width: 30px;
+      height: 30px;
+      border-width: 8px;
+      top: 0;
+      left: 0;
+      background: url('../../page/tool/img/jia.png')no-repeat;
+      background-size:100% ;
+
+
+    }
+
+    &.c1 {
+      border-color: $c1;
+    }
+
+    &.c2 {
+      border-color: $c2;
+    }
+
+    &.c3 {
+      border-color: $c3;
+    }
+
+    @for $i from 1 through $numberOfSingleElements {
+      &#{$i} {
+        animation: circle+($i) $duration $bezierElements  alternate;
+      }
+    }
+
+  }
+
+}
+@keyframes square1 {
+  0%, 20% {
+    transform: scale(1) translate(66px, 78px) rotate(110deg);
+
+  }
+  100% {
+    transform: scale(0) translate(0) rotate(0);
+
+  }
+}
+@keyframes square2 {
+  0%, 20% {
+    transform: scale(1) translate(46px, -141px) rotate(163deg);
+  }
+  100% {
+    transform: scale(0) translate(0) rotate(0);
+  }
+}
+@keyframes square3 {
+  0%, 20% {
+    transform: scale(1) translate(131px, -117px) rotate(126deg);
+  }
+  100% {
+    transform: scale(0) translate(0) rotate(0);
+
+  }
+}
+@keyframes square4 {
+  0%, 20% {
+    transform: scale(1) translate(91px, -94px) rotate(122deg);
+  }
+  100% {
+    transform: scale(0) translate(0) rotate(0);
+  }
+}
+@keyframes square5 {
+  0%, 20% {
+    transform: scale(1) translate(131px, -10px) rotate(111deg);
+  }
+  100% {
+    transform: scale(0) translate(0) rotate(0);
+  }
+}
+@keyframes square6 {
+  0%, 20% {
+    transform: scale(1) translate(-94px, -66px) rotate(125deg);
+  }
+  100% {
+    transform: scale(0) translate(0) rotate(0);
+  }
+}
+@keyframes square7 {
+  0%, 20% {
+    transform: scale(1) translate(-102px, 50px) rotate(139deg);
+  }
+  100% {
+    transform: scale(0) translate(0) rotate(0);
+  }
+}
+@keyframes square8 {
+  0%, 20% {
+    transform: scale(1) translate(-62px, 20px) rotate(118deg);
+  }
+  100% {
+    transform: scale(0) translate(0) rotate(0);
+  }
+}
+@keyframes circle1 {
+  0%, 20% {
+    transform: scale(1) translate(13px, -113px);
+  }
+  100% {
+    transform: scale(0) translate(0);
+  }
+}
+@keyframes circle2 {
+  0%, 20% {
+    transform: scale(1) translate(29px, -71px);
+  }
+  100% {
+    transform: scale(0) translate(0);
+  }
+}
+@keyframes circle3 {
+  0%, 20% {
+    transform: scale(1) translate(1px, -72px);
+  }
+  100% {
+    transform: scale(0) translate(0);
+  }
+}
+@keyframes circle4 {
+  0%, 20% {
+    transform: scale(1) translate(-62px, 132px);
+  }
+  100% {
+    transform: scale(0) translate(0);
+  }
+}
+@keyframes circle5 {
+  0%, 20% {
+    transform: scale(1) translate(18px, 86px);
+  }
+  100% {
+    transform: scale(0) translate(0);
+  }
+}
+@keyframes circle6 {
+  0%, 20% {
+    transform: scale(1) translate(62px, 15px);
+  }
+  100% {
+    transform: scale(0) translate(0);
+  }
+}
+@keyframes circle7 {
+  0%, 20% {
+    transform: scale(1) translate(74px, -25px);
+  }
+  100% {
+    transform: scale(0) translate(0);
+  }
+}
+@keyframes circle8 {
+  0%, 20% {
+    transform: scale(1) translate(95px, -45px);
+  }
+  100% {
+    transform: scale(0) translate(0);
+  }
+}
+

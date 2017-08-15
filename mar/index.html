@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>k5电竞</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="bookmark" href="/favicon.ico"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="Cache-Control" CONTENT="no-cache">
+    <meta http-equiv="Pragma" CONTENT="no-cache">
+    <link rel="stylesheet" href="https://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="https://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+    <!--<script src="src/assets/js/clipboard.min.js"></script>-->
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth) return;
+                        docEl.style.fontSize = 16 * (clientWidth / 320) + 'px';
+                    };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+        window.addEventListener("resize", function() {
+          if(document.activeElement.tagName=="INPUT" || document.activeElement.tagName=="TEXTAREA") {
+            window.setTimeout(function() {
+              document.activeElement.scrollIntoViewIfNeeded();
+            },0);
+          }
+        });
+
+
+    </script>
+    <!-- start Dplus --><script type="text/javascript">!function(a,b){if(!b.__SV){var c,d,e,f;window.dplus=b,b._i=[],b.init=function(a,c,d){function g(a,b){var c=b.split(".");2==c.length&&(a=a[c[0]],b=c[1]),a[b]=function(){a.push([b].concat(Array.prototype.slice.call(arguments,0)))}}var h=b;for("undefined"!=typeof d?h=b[d]=[]:d="dplus",h.people=h.people||[],h.toString=function(a){var b="dplus";return"dplus"!==d&&(b+="."+d),a||(b+=" (stub)"),b},h.people.toString=function(){return h.toString(1)+".people (stub)"},e="disable track track_links track_forms register unregister get_property identify clear set_config get_config get_distinct_id track_pageview register_once track_with_tag time_event people.set people.unset people.delete_user".split(" "),f=0;f<e.length;f++)g(h,e[f]);b._i.push([a,c,d])},b.__SV=1.1,c=a.createElement("script"),c.type="text/javascript",c.charset="utf-8",c.async=!0,c.src="//w.cnzz.com/dplus.php?id=1262122119",d=a.getElementsByTagName("script")[0],d.parentNode.insertBefore(c,d)}}(document,window.dplus||[]),dplus.init("1262122119");</script><!-- end Dplus -->
+  </head>
+  <body>
+    <div id="app">
+    </div>
+    <script type='text/javascript' src='https://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+    <script type="text/javascript">
+      // 关闭SUI的路由
+      $.config = {
+        router: false
+      };
+
+    </script>
+    <script type='text/javascript' src='https://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='https://g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+    <!--<script type="text/javascript">-->
+       <!--var abp = abp || {};-->
+       <!--abp.auth = abp.auth || {};-->
+       <!--abp.auth.allPermissions = abp.auth.allPermissions || {};-->
+       <!--abp.auth.grantedPermissions = abp.auth.grantedPermissions || {};-->
+    <!--</script>-->
+    <!--<script  type="text/javascript" id='getscript'></script>-->
+    <!--<script type="text/javascript">-->
+      <!--$('#getscript')[0].src='https://api.k5game.com/AbpScripts/GetScripts?v='+new Date().getTime()-->
+      <!--abp.auth.isGranted = function (permissionName) {-->
+        <!--return console.log(abp.auth.allPermissions[permissionName] != undefined && abp.auth.grantedPermissions[permissionName] != undefined);-->
+      <!--};-->
+       <!--sessionStorage.setItem('isGranted', abp.auth.isGranted());-->
+
+    <!--</script>-->
+   <script>
+        if(window.location.href=='http://m.k5game.com/'){
+            window.location='https://m.k5game.com/routerview'
+        }
+
+   </script>
+  </body>
+</html>

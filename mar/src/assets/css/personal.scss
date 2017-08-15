@@ -1,0 +1,240 @@
+@import "min";
+.clearfix::before,
+.clearfix::after{
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+.whole{
+  width:100%;
+  overflow:hidden;
+  margin:0 auto;
+  padding-top: pxTorem(160);
+}
+.k-title{
+  width:100%;
+  height:auto;
+  overflow:hidden;
+  font-size:pxTorem(38);
+  text-align:center;
+  line-height:pxTorem(368);
+  color:#fff;
+}
+
+.login-form{
+  width:pxTorem(550);
+  height:auto;
+  margin:0 auto;
+  margin-top:pxTorem(30)
+}
+.common-div{
+  width:100%;
+  height:pxTorem(88);
+  overflow:hidden;
+  border-radius:4px;
+  -webkit-border-radius:4px;
+  margin-bottom:pxTorem(30);
+  position:relative;
+  box-sizing: border-box;
+  border:1px solid transparent;
+}
+.user-name,.user-pasw,.user-code{
+  background-color:#363636;
+}
+.divfoucs{
+  border: 1px solid #ffa800;
+}
+.divfoucs .iconfont{
+  color: #ffa800;
+} 
+.common-div >.common-icon{
+  float:left;
+  width:pxTorem(44);
+  height:pxTorem(44);
+  overflow:hidden;
+  margin:pxTorem(19);
+}
+.common-div >.common-icon img{
+  width:100%;
+  height:auto;
+}
+.common-div >input{
+  width:pxTorem(360);
+  height:pxTorem(56);
+  margin:pxTorem(16) pxTorem(12);
+  background-color:transparent;
+  border:none;
+  outline:none;
+  font-size:pxTorem(30);
+  color:#fff;
+}
+.common-div >i{
+  display: inline-block;
+  margin: pxTorem(10) 0;
+}
+.login-btn{
+  background-color:#ffa800;
+  color:#2d2d2d;
+  font-size:pxTorem(34);
+  text-align:center;
+  line-height:pxTorem(88);
+  margin-top: pxTorem(80)
+}
+.forgets{
+  width:pxTorem(550);
+  height:auto;
+  margin:0 auto;
+  font-size: pxTorem(24);
+  color: rgba(255,255,255,.5)
+}
+ .forgets .piaochecked {
+    width: 15px;
+    height: 15px;
+    float: left;
+    cursor: pointer;
+    margin-left: 10px;
+    text-align: center;
+    background-image: url('../../assets/img/game_gou.png');
+    background-repeat: no-repeat;
+    border: 1px solid #ffa800;
+    border-radius: 5px;
+    background-size: 80%;
+    margin-right: .5rem;
+    margin-top: .2rem;
+    }
+    .forgets .on_check{
+      background-position: 0 -21px;
+      
+    }
+ .forgets .radioclass{
+   opacity: 0;
+  cursor: pointer;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+ }
+ .forgets-model{
+   position: fixed;
+   top: 0px;
+   left: 0px;
+   right: 0px;
+   bottom: 0px;
+   background-color: #2d2d2d;
+   z-index: 999;
+   color: #fff;
+   padding: .5rem;
+   padding-top: pxTorem(88);
+   font-size: pxTorem(28);
+   overflow: scroll;
+ }
+ .forgets-model h1{
+   text-align: left; 
+   margin: 30px auto 20px auto; 
+ }
+  .forgets-model p{
+    text-indent: 20px;
+   text-align: left; 
+   font-size: pxTorem(24);
+   color: rgba(255,255,255,.8) 
+    
+  }
+.forgets >a{
+  color:#838383;
+  opacity:0.4;
+  font-size:pxTorem(26);
+  margin-left:.5rem; 
+}
+.forgets >a +a{
+  float:right;
+}
+.forget-btn{
+  display: block;
+  text-align: right;
+}
+/***layer css***/
+.layui-m-layercont,.layui-m-layerbtn >span{
+  font-size: pxTorem(24) !important;
+}
+.get-code{
+  color: #2d2d2d;
+  display: block;
+  height: 100%;
+  text-align: center;
+  line-height: pxTorem(88);
+  font-size: pxTorem(34);
+  background: #ffa800;
+}
+// 登入注册
+.whole .buttons-tab{
+  background: #363636;
+  color: #fff;
+}
+.whole .buttons-tab .button{
+  height: pxTorem(88);
+  line-height: pxTorem(88);
+  color: #fff;
+}
+.whole .buttons-tab:after{
+  background: transparent;
+}
+.whole .buttons-tab .button.active{
+  color: #ffa800;
+  border-bottom: 1px solid #ffa800;
+  background: -webkit-linear-gradient(#363636,#2d2d2d); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#363636,#2d2d2d); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#363636,#2d2d2d); /* Firefox 3.6 - 15 */
+  background: linear-gradient( #363636,#2d2d2d);
+}
+.whole .head-logo{
+  width: pxTorem(370);
+  height: pxTorem(370);
+  display: block;
+  margin: 0 auto 0 auto;
+}
+.whole .content-block{
+  margin: 0px;
+  padding: 0px;
+}
+.qqorweix{
+  text-align: center;
+  background: #363636;
+  margin-top: pxTorem(90);
+}
+.qqorweix h1{
+  font-weight: normal;
+  color: #808080;
+  font-size: pxTorem(26);
+  width: 100%;
+  height: pxTorem(53);
+}
+.qqorweix h1 img{
+  width: 100%;
+  height: 100%;
+}
+.qqorweix .qqorweix-box{
+  width: pxTorem(580);
+  margin: pxTorem(50) auto 0 auto;
+
+}
+.qqorweix dl{
+  float: left;
+  width: 50%;
+  height:pxTorem(160);
+  border-right: 1px solid #7C7C7C;
+  margin-bottom: pxTorem(30);
+}
+.qqorweix dl:last-child{
+  border-right: none;
+}
+.qqorweix dl dt{
+  border-right:0px;
+  font-size: pxTorem(72);
+  color: #ffa800;
+}
+.qqorweix dl dd{
+  font-size: pxTorem(20);
+  color: #fff;
+  margin-top: pxTorem(14);
+}

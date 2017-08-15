@@ -1,0 +1,87 @@
+@import "../../assets/css/min.scss";
+
+.fx {
+  background-color: #1f1f1f;
+  position: relative;
+  max-width: pxTorem(750);
+  margin: 0 auto;
+  .fx_header {
+    text-align: center;
+    height: 2.35rem;
+    background-color: #363636;
+    line-height: 2.35rem;
+    color: white;
+    img {
+      margin: 0.56rem 0 0 0.4rem;
+      float: left;
+      height: 1.17rem;
+      width: 1.17rem;
+    }
+    p {
+      font-size: 0.91rem;
+    }
+  }
+  .bg {
+    margin: 0 auto;
+    height: pxTorem(1366);
+    background: url("./images/2.png") no-repeat center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+  }
+  .name {
+    position: absolute;
+    top: pxTorem(870);
+    left: pxTorem(80);
+    width: pxTorem(600);
+    height: pxTorem(35);
+    font-size: pxTorem(25);
+    line-height: pxTorem(35);
+  }
+
+  .form_input {
+    position: absolute;
+    top: pxTorem(510);
+    left: pxTorem(100);
+    box-sizing: border-box;
+    text-align: left;
+    height: 1.73rem;
+    border-radius: 0.21rem;
+    border: 1px solid #090823;
+    color: white;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: block;
+    outline: 0;
+    text-decoration: none;
+    width: 16rem;
+    background: #090823;
+    font-size: pxTorem(24);
+    margin-top: 0.43rem;
+  }
+  //.form_input:focus {
+  //  border: 0.05rem solid #ffa800;
+  //}
+  .button1 {
+    position: absolute;
+    top: pxTorem(600);
+    left: 50%;
+    margin-left:pxTorem(-147);
+    img {
+      width: pxTorem(293);
+      height: pxTorem(88);
+    }
+
+  }
+  .fx_Tail{
+    position: absolute;
+    top: pxTorem(1110);
+    left: pxTorem(50);
+    color: #9b9aa2;
+    font-size:pxTorem(20);
+    line-height:pxTorem(20);
+    p{
+      margin-bottom: pxTorem(16);
+    }
+
+  }
+}

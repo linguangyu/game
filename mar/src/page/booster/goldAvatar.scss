@@ -1,0 +1,49 @@
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.goldAvatar {
+  .goldAvatar_header {
+    text-align: center;
+    height: 2.35rem;
+    background-color: #363636;
+    line-height: 2.35rem;
+    color: white;
+    img {
+      margin: 0.56rem 0 0 0.4rem;
+      float: left;
+      height: 1.17rem;
+      width: 1.17rem;
+    }
+    p {
+      font-size: 0.91rem;
+    }
+  }
+  .goldAvatar_center {
+    background-color: #363636;
+    margin: 0.8rem 1.04rem 0 1.04rem;
+    height: 26.93rem;
+    border-radius: 0.8rem 0.8rem 0 0;
+    .center_top {
+      height: 1.07rem;
+      border-radius: 0.8rem 0.8rem 0 0;
+    }
+    .center_header {
+      text-align: center;
+      font-size: 0.96rem;
+      height: 3.17rem;
+      line-height: 3.17rem;
+      color: #fba601;
+      background: url("./imgaes/bg01.png") no-repeat top left;
+      -webkit-background-size: 100% 3.17rem;
+      background-size: 100% 3.17rem;
+    }
+  }
+}

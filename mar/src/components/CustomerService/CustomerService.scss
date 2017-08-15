@@ -1,0 +1,91 @@
+@import "../../assets/css/min.scss";
+.CustomerService_wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  color: white;
+  .CustomerService {
+    width: pxTorem(580);
+    height: pxTorem(413);
+    background-color: #444444;
+    border: 1px solid #f0a30a;
+    border-radius: pxTorem(10);
+    position: relative;
+    z-index: 10;
+    margin: pxTorem(259) auto 0 auto;
+    text-align: center;
+    .CustomerService_title {
+      font-size: pxTorem(34);
+      line-height: pxTorem(90);
+      border-bottom: 1px solid #696969;
+    }
+    .CustomerService_name {
+      margin-top: pxTorem(28);
+      font-size: pxTorem(28);
+      line-height: pxTorem(28);
+
+    }
+    .CustomerService_information {
+      margin: pxTorem(30) auto 0 auto;
+      width: pxTorem(520);
+      height: pxTorem(88);
+      position: relative;
+      background-color: #2d2d2d;
+      border-radius: pxTorem(10);
+      text-align: left;
+      .form_input {
+        position: absolute;
+        top: pxTorem(-5);
+        left: pxTorem(250);
+        box-sizing: border-box;
+        text-align: left;
+        height: 1.73rem;
+        border-radius: 0.21rem;
+        border: 1px solid #2d2d2d;
+        color: white;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        display: block;
+        outline: 0;
+        text-decoration: none;
+        width: 5rem;
+        background: #2d2d2d;
+        font-size: pxTorem(24);
+        margin-top: 0.43rem;
+      }
+      p {
+        font-size: pxTorem(22);
+      }
+      .CustomerService_information_qq {
+        line-height: pxTorem(88);
+        margin-left: pxTorem(170);
+      }
+      .CustomerService_information_fuzhi {
+        position: absolute;
+        top: 50%;
+        right: pxTorem(17);
+        margin-top: pxTorem(-22);
+        width: pxTorem(88);
+        height: pxTorem(44);
+        background-color: #fba901;
+        color: black;
+        line-height: pxTorem(44);
+        border-radius: pxTorem(10);
+      }
+    }
+    .CustomerService_sure {
+      margin: pxTorem(30) auto 0 auto;
+      width: pxTorem(480);
+      height: pxTorem(88);
+      background-color: #fba901;
+      font-size: pxTorem(34);
+      line-height: pxTorem(88);
+      color: black;
+      border-radius: pxTorem(10);
+    }
+  }
+}

@@ -1,0 +1,195 @@
+@import "../../assets/css/min.scss";
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.paymentSuccessful {
+  width: 100%;
+  height: pxTorem(1334);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #2d2d2d;
+  z-index: 999;
+  .paymentSuccessful_header {
+    text-align: center;
+    height: 2.35rem;
+    background-color: #363636;
+    line-height: 2.35rem;
+    color: white;
+    margin-bottom: pxTorem(40);
+    img {
+      margin: 0.56rem 0 0 0.4rem;
+      float: left;
+      height: 1.17rem;
+      width: 1.17rem;
+    }
+    p {
+      font-size: 0.91rem;
+    }
+  }
+  .paymentSuccessful_title {
+    text-align: center;
+    color: white;
+    position: relative;
+    .title_Avatar {
+      margin: pxTorem(88) auto 0 auto;
+      width: pxTorem(180);
+      height: pxTorem(180);
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: white;
+      border: 2px solid #fba601;
+      position: relative;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: pxTorem(180);
+        height: pxTorem(180);
+      }
+    }
+    .title_name {
+      margin-top: pxTorem(13);
+      font-size: pxTorem(28);
+      line-height: pxTorem(28);
+
+    }
+    .title_phone {
+      margin-top: pxTorem(11);
+      font-size: pxTorem(22);
+      color: #bebebe;
+      line-height: pxTorem(22);
+    }
+    .title_status {
+      margin-top: pxTorem(30);
+      font-size: pxTorem(34);
+      line-height: pxTorem(34);
+      font-weight: 600;
+    }
+    .title_bg{
+      width: pxTorem(279);
+      height: pxTorem(278);
+      position: absolute;
+      top: pxTorem(274-88);
+      right: pxTorem(50);
+    }
+  }
+  .paymentSuccessful_checkOrder {
+    margin-top: pxTorem(58);
+    display: flex;
+    justify-content: center;
+    align-items: Center;
+    height: pxTorem(182);
+    background: #444444 url("./imgaes/ditiao.png") no-repeat left bottom;
+    -webkit-background-size: 100% pxTorem(13);
+    background-size: 100% pxTorem(13);
+    .checkOrder {
+      text-align: center;
+      width: pxTorem(300);
+      background-color: #fba601;
+      height: pxTorem(88);
+      margin: 0 auto;
+      line-height: pxTorem(88);
+      border-radius: pxTorem(10);
+    }
+  }
+  .paymentSuccessful_OrderContent {
+    margin-top: pxTorem(25);
+    background-color: #444444;
+    .OrderContent_title {
+      height: pxTorem(140);
+      font-size: pxTorem(24);
+      line-height: pxTorem(24);
+      border-bottom: 1px solid #575757;
+      color: white;
+      .title_top {
+        padding-top: pxTorem(30);
+        margin: 0 pxTorem(25) 0 pxTorem(25);
+        .top_left {
+          float: left;
+        }
+        .top_right {
+          float: right;
+        }
+      }
+      .title_under {
+        margin: pxTorem(30) pxTorem(25) 0 pxTorem(25);
+        .under_left {
+          float: left;
+        }
+        .under_right {
+          float: right;
+        }
+      }
+    }
+    .OrderContent_center {
+      height: pxTorem(184);
+      position: relative;
+      border-bottom: 1px solid #575757;
+      .details_left {
+        position: absolute;
+        top: pxTorem(12);
+        left: pxTorem(24);
+        width: pxTorem(160);
+        height: pxTorem(160);
+        background-color: #4a4a4a;
+        img{
+          width: pxTorem(160);
+          height: pxTorem(160);
+        }
+      }
+      .details_right {
+        margin-left: pxTorem(203);
+        .right_title {
+          padding-top: pxTorem(19);
+          color: white;
+          font-size: pxTorem(24);
+          line-height: pxTorem(24);
+          .title_Career {
+            float: left;
+          }
+          .title_KB {
+            padding-right: pxTorem(23);
+            float: right;
+          }
+        }
+        .right_mode {
+          margin-top: pxTorem(60);
+          font-size: pxTorem(22);
+          line-height: pxTorem(22);
+          color: #aeaeae;
+        }
+        .right_game {
+          margin-top: pxTorem(13);
+          font-size: pxTorem(22);
+          line-height: pxTorem(22);
+          color: #aeaeae;
+        }
+
+      }
+    }
+    .OrderContent_foot {
+      font-size:pxTorem(28);
+      line-height:pxTorem(88);
+      color: white;
+      height: pxTorem(88);
+      text-align: right;
+      .foot_shifu {
+        padding-right:pxTorem(90);
+      }
+      .foot_price {
+        padding-right:pxTorem(25);
+      }
+    }
+
+  }
+}

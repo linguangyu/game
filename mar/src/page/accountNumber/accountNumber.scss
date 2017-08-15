@@ -1,0 +1,1140 @@
+@import "../../assets/css/min.scss";
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.accountNumber {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  .accountNumber_header {
+    background-color: #444444;
+    margin-bottom: 0.8rem;
+    .header_top {
+      height: 2.35rem;
+      line-height: 2.35rem;
+      display: flex;
+      .top_left {
+        flex: 1;
+        img {
+          margin-left: 0.6rem;
+          width: 1.17rem;
+          height: 1.17rem;
+        }
+      }
+      .top_zhongjian {
+        position: relative;
+        flex: 1;
+        input[type=text] {
+          box-sizing: border-box;
+          height: 1.73rem;
+          border-radius: 0.21rem;
+          border: 1px solid #aaaaaa;
+          color: #868686;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          display: block;
+          outline: 0;
+          padding: 0 2.27rem;
+          text-decoration: none;
+          width: 14.85rem;
+          background: #363636;
+          font-size: pxTorem(22);
+          margin-top: 0.4rem;
+        }
+        .form_input:focus {
+          border: 1px solid #ffa800;
+        }
+        img {
+          position: absolute;
+          top: 0.72rem;
+          left: 0.56rem;
+          width: 1.17rem;
+          height: 1.17rem;
+        }
+      }
+      .top_right {
+        flex: 1;
+        text-align: right;
+        img {
+          margin-right: 0.67rem;
+          width: 1.17rem;
+          height: 1.17rem;
+        }
+      }
+      .top_right_huang {
+        flex: 1;
+        text-align: right;
+        img {
+          margin-right: 0.67rem;
+          width: 1.17rem;
+          height: 1.17rem;
+
+        }
+      }
+    }
+    .header_bottom {
+      height: 2.35rem;
+      line-height: 2.35rem;
+      display: flex;
+      color: white;
+      font-size: 0.64rem;
+
+      .bottom_left {
+        flex: 1;
+        text-align: center;
+        padding-left: pxTorem(65);
+        span {
+          padding-left: pxTorem(30);
+          display: inline-block;
+        }
+      }
+      .active {
+        color: #FFA800;
+        span {
+          transform: rotate(180deg);
+          padding-right: pxTorem(30);
+          padding-left: 0;
+          display: inline-block;
+        }
+      }
+      .bottom_center {
+        flex: 1;
+        text-align: center;
+      }
+      .bottom_right {
+        flex: 0 0 5.15rem;
+        box-sizing: border-box;
+        position: relative;
+        span {
+          display: inline-block;
+          line-height: 1.49rem;
+          padding-left: 0.8rem;
+          border-left: 1px solid #2d2d2d;
+        }
+        img {
+          width: 1.17rem;
+          height: 1.17rem;
+          position: absolute;
+          top: 0.59rem;
+          right: 1.07rem;
+        }
+      }
+
+    }
+  }
+  .accountNumber_list {
+    position: fixed;
+    top: pxTorem(200);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: scroll;
+    .preloader:after {
+      display: none;
+    }
+    .list {
+      display: flex;
+      height: 6.67rem;
+      position: relative;
+      border-bottom: 1px solid #2D2D2D;
+      .list_left {
+        flex: 0 0 6.67rem;
+        background-color: #747474;
+        height: pxTorem(250);
+        img {
+          width: pxTorem(250);
+          height: pxTorem(250);
+        }
+      }
+      .list_right {
+        flex: 1;
+        background-color: #4a4a4a;
+        position: relative;
+        .list_right_title {
+          margin: 0.53rem 0 1.6rem 0.53rem;
+          line-height: 0.91rem;
+          max-width: pxTorem(350);
+          position: relative;
+          img {
+            width: 0.91rem;
+            height: 0.91rem;
+          }
+          p{
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: inline-block;
+            color: white;
+            font-size: 0.75rem;
+            margin-left:pxTorem(50);
+          }
+        }
+        .list_right_details {
+          margin: 0 0 0 0.53rem;
+          color: #c4c4c4;
+          font-size: 0.59rem;
+          line-height: 0.59rem;
+          p {
+            margin-bottom: 0.53rem;
+          }
+        }
+        .list_right_stock {
+          text-align: right;
+          position: absolute;
+          bottom: 0.1rem;
+          right: 0.67rem;
+          .stock_prick {
+            color: #fba601;
+            font-size: 0.91rem;
+            line-height: 0.91rem;
+            margin-bottom: 0.53rem;
+          }
+          .stock_number {
+            font-size: 0.53rem;
+            line-height: 0.53rem;
+            color: #c4c4c4;
+          }
+        }
+        .list_right_more {
+          position: absolute;
+          bottom: 0.53rem;
+          right: 0.67rem;
+          img {
+            height: 1.17rem;
+            width: 1.17rem;
+          }
+        }
+        .list_right_more_show {
+          position: absolute;
+          bottom: 0.53rem;
+          right: 0.67rem;
+          img {
+            height: 1.17rem;
+            width: 1.17rem;
+          }
+        }
+        .list_right_show {
+          width: 100%;
+          height: 100%;
+          background-color: #4a4a4a;
+          position: absolute;
+          top: 0;
+          left: 0;
+          .show_title {
+            margin: 0.53rem 0 0 0.53rem;
+            color: white;
+            font-size: 14px;
+            line-height: 14px;
+          }
+          .show_zong {
+            margin-top: 1.76rem;
+            font-size: 0;
+            color: #c4c4c4;
+            .show_zong_left {
+              margin-left: 0.53rem;
+              display: inline-block;
+              font-size: 11px;
+              line-height: 11px;
+              p {
+                margin-bottom: 0.53rem;
+              }
+            }
+            .show_zong_right {
+              margin-left: 1.81rem;
+              display: inline-block;
+              vertical-align: top;
+              font-size: 11px;
+              line-height: 11px;
+              p {
+                margin-bottom: 0.53rem;
+              }
+            }
+
+          }
+          .show_genxin {
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: white;
+            font-size: 0.59rem;
+            line-height: 0.59rem;
+
+          }
+        }
+      }
+
+    }
+  }
+  .header_bottom_model {
+    position: absolute;
+    top: pxTorem(174);
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    .header_bottom_content {
+      font-size: pxTorem(22);
+      border: 1px solid #ffa800;
+      background: #444;
+      color: #fff;
+      padding: pxTorem(30) pxTorem(25);
+      position: relative;
+      &:before {
+        content: '';
+        display: block;
+        width: pxTorem(15);
+        height: pxTorem(15);
+        transform: rotate(45deg);
+        background: #444444;
+        position: absolute;
+        top: pxTorem(-10);
+        left: pxTorem(140);
+        border-top: 1px solid #FFA800;
+        border-left: 1px solid #FFA800;
+
+      }
+      p {
+        img {
+          float: right;
+          width: pxTorem(30);
+          height: pxTorem(20);
+          margin-top: .5rem;
+        }
+      }
+      .priceLowToHigh {
+        color: #FFA800;
+      }
+      .priceHighToLow {
+        color: #FFA800;
+      }
+      div {
+        height: 1px;
+        background: #2d2d2d;
+        margin: pxTorem(30) 0;
+      }
+    }
+  }
+  .header_bottom_condition {
+    position: absolute;
+    top: pxTorem(100);
+    left: pxTorem(130);
+    right: 0;
+    bottom: 0;
+    border: 1px solid #FFA800;
+    border-right: 0px;
+    background: #444444;
+    border-radius: 5px 0 0 5px;
+    padding: pxTorem(20);
+    h1 {
+      height: pxTorem(85);
+      line-height: pxTorem(65);
+      font-size: pxTorem(28);
+      color: #FFA800;
+      border-bottom: 2px solid #2D2D2D;
+      text-align: right;
+      font-weight: normal;
+      span {
+        float: right;
+        height: 80%;
+        padding-left: pxTorem(25);
+        border-left: 2px solid #2D2D2D;
+      }
+      img {
+        float: right;
+        width: pxTorem(40);
+        height: pxTorem(40);
+        margin-top: .3rem;
+        margin-left: pxTorem(20);
+      }
+    }
+    ul {
+      li {
+        padding: pxTorem(15) 0;
+        p {
+          color: #ffffff;
+          font-size: pxTorem(28);
+          position: relative;
+          padding-left: pxTorem(40);
+          &:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0px;
+            content: '';
+            display: block;
+            background: #FFA800;
+            width: pxTorem(8);
+          }
+
+          a {
+            float: right;
+            background: rgba(0, 0, 0, .5);
+            color: rgba(225, 225, 225, .5);
+            padding: pxTorem(8) pxTorem(20);
+            border-radius: 5px;
+          }
+          .active {
+            color: #FFA800;
+          }
+        }
+        div {
+          margin-top: pxTorem(40);
+          span {
+            font-size: pxTorem(28);
+            color: #ffffff;
+            padding: 0 pxTorem(11);
+            background: #575757;
+            margin-right: pxTorem(10);
+            border-radius: 5px;
+            padding: pxTorem(20) pxTorem(20);
+          }
+          .active {
+            border: 1px solid #FFA800;
+            background: rgba(0, 0, 0, .5);
+          }
+          input {
+            width: pxTorem(270);
+            height: pxTorem(60);
+            border-radius: 5px;
+            border: 1px solid #a0a0a0;
+            font-size: pxTorem(28);
+            text-align: center;
+            background: #2D2D2D;
+            color: #ffffff;
+          }
+          i {
+            width: .4rem;
+            height: pxTorem(4);
+            display: inline-block;
+            background: #ffffff;
+            margin-bottom: .2rem;
+          }
+        }
+        ul {
+          margin-top: pxTorem(25);
+          display: flex;
+          li {
+            flex: 1;
+            width: pxTorem(125);
+            line-height: pxTorem(50);
+            background: #575757;
+            color: #ffffff;
+            font-size: pxTorem(26);
+            margin-right: pxTorem(15);
+            border-radius: 5px;
+            text-align: center;
+          }
+        }
+      }
+
+    }
+    .selectBtn {
+      position: absolute;
+      bottom: 10px;
+      left: 15%;
+      width: 70%;
+      background: #FFA800;
+      border: 0;
+      border-radius: 5px;
+      font-size: pxTorem(28);
+      padding: pxTorem(10) 0;
+    }
+  }
+  .FilterTheMask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+}
+
+.accountNumberDateils {
+  position: relative;
+  height: pxTorem(1334);
+  .accountNumberIcon {
+    background-color: #444444;
+    height: pxTorem(88);
+    padding: 0 pxTorem(25);
+    z-index: 10;
+    line-height: pxTorem(88);
+    .accountNumberIcon_jt {
+      width: pxTorem(48);
+      height: pxTorem(48);
+    }
+    .accountNumberIcon_right {
+      float: right;
+      font-size: 0;
+      .accountNumberIcon_right_kf {
+        display: inline-block;
+        margin-right: pxTorem(30);
+        img {
+          width: pxTorem(39);
+          height: pxTorem(33);
+          vertical-align: middle;
+        }
+        p {
+          margin-left: pxTorem(14);
+          font-size: pxTorem(24);
+          display: inline-block;
+          color: white;
+          vertical-align: middle;
+        }
+      }
+      .accountNumberIcon_right_fx {
+        padding-left: pxTorem(36);
+        border-left: 1px solid #2d2d2d;
+        display: inline-block;
+        height: pxTorem(44);
+        line-height: pxTorem(44);
+        img {
+          width: pxTorem(44);
+          height: pxTorem(44);
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+  .accountNumberDateils_herder {
+    height: pxTorem(120);
+    width: 100%;
+    background-color: #444444;
+    display: flex;
+    .accountNumberDateils_herder_left {
+      flex: 1;
+      font-size: pxTorem(28);
+      text-align: left;
+      margin: pxTorem(20) 0 0 pxTorem(23);
+      color: white;
+    }
+    .accountNumberDateils_herder_right {
+      margin: pxTorem(20) pxTorem(24) 0 0;
+      flex: 0 0 pxTorem(280);
+      text-align: right;
+      .accountNumberDateils_herder_right_first {
+        font-size: pxTorem(36);
+        color: #fba901;
+        line-height: pxTorem(36);
+      }
+      .accountNumberDateils_herder_right_scend {
+        margin-top: pxTorem(20);
+        font-size: pxTorem(22);
+        color: #b2b2b2;
+        line-height: pxTorem(22);
+      }
+    }
+  }
+  .swiper-container {
+    width: 375px;
+    height: pxTorem(750);
+    padding-bottom: 0;
+    margin: 0 auto;
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .accountNumberDateils_Dateils {
+    position: fixed;
+    bottom: -280.5px;
+    height: pxTorem(940);
+    width: 100%;
+    background-color: #444444;
+    z-index: 3;
+    transition: bottom 1s;
+    .Dateils_Dateils_SwitchState {
+      position: absolute;
+      top: pxTorem(-50);
+      right: pxTorem(24);
+      width: pxTorem(100);
+      height: pxTorem(100);
+      background-color: #444444;
+      border-radius: 50%;
+      text-align: center;
+      line-height: pxTorem(100);
+      img {
+        width: pxTorem(88);
+        height: pxTorem(88);
+      }
+    }
+    .accountdescribe {
+      display: table;
+      color: #c3c3c3;
+      font-size: pxTorem(22);
+      line-height: pxTorem(44);
+      margin: 0 auto;
+      width: pxTorem(700);
+      .accountdescribe_tr {
+        display: table-row;
+        border-bottom: 1px dashed #575757;
+      }
+      .accountdescribe_td {
+        display: table-cell;
+        padding: 0 3px;
+      }
+      .accountdescribe_s {
+        width: pxTorem(120);
+      }
+    }
+    .businessDescription {
+      color: #ffffff;
+      margin-left: pxTorem(23);
+      p {
+        margin-top: pxTorem(44);
+        font-size: pxTorem(28);
+        line-height: pxTorem(28);
+        position: relative;
+        padding-left: pxTorem(15);
+        margin-bottom: pxTorem(30);
+        &:before {
+          content: '';
+          display: block;
+          width: pxTorem(4);
+          background: #FFA800;
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+        }
+      }
+      div {
+        min-height: pxTorem(91);
+        width: 100%;
+        font-size: pxTorem(22);
+        color: rgba(225, 225, 225, .5);
+        word-wrap: break-word
+      }
+    }
+    .accountBtn {
+      position: absolute;
+      bottom: pxTorem(20);
+      left: 50%;
+      margin-left: pxTorem(-307.5);
+      text-align: center;
+      background-color: #444444;
+      button {
+        width: pxTorem(615);
+        height: pxTorem(88);
+        background: #FFA800;
+        border: 0;
+        border-radius: 10px;
+        font-size: pxTorem(34);
+      }
+    }
+
+  }
+  .theReserved_model {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: pxTorem(120);
+    background: rgba(0, 0, 0, .5);
+    z-index: 4;
+    .theReserved_content {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: pxTorem(120);
+      background: #444444;
+      padding: pxTorem(30) pxTorem(25);
+      text-align: center;
+      font-size: pxTorem(28);
+      z-index: 100;
+      h1 {
+        font-weight: normal;
+        margin-bottom: pxTorem(25);
+        color: #ffffff;
+      }
+      input {
+        width: 100%;
+        height: pxTorem(88);
+        border: 1px solid #696969;
+        background: #363636;
+        margin-bottom: pxTorem(15);
+        text-align: center;
+        color: #ffffff;
+      }
+      p {
+        color: #b2b2b2;
+        font-size: pxTorem(22);
+      }
+    }
+  }
+  .CustomerService_wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    color: white;
+    .CustomerService {
+      width: pxTorem(580);
+      height: pxTorem(413);
+      background-color: #444444;
+      border: 1px solid #f0a30a;
+      border-radius: pxTorem(10);
+      position: relative;
+      z-index: 10;
+      margin: pxTorem(259) auto 0 auto;
+      text-align: center;
+      .CustomerService_title {
+        font-size: pxTorem(34);
+        line-height: pxTorem(90);
+        border-bottom: 1px solid #696969;
+      }
+      .CustomerService_name {
+        margin-top: pxTorem(28);
+        font-size: pxTorem(28);
+        line-height: pxTorem(28);
+
+      }
+      .CustomerService_information {
+        margin: pxTorem(30) auto 0 auto;
+        width: pxTorem(520);
+        height: pxTorem(88);
+        position: relative;
+        background-color: #2d2d2d;
+        border-radius: pxTorem(10);
+        p {
+          font-size: pxTorem(22);
+        }
+        .CustomerService_information_qq {
+          line-height: pxTorem(88);
+        }
+        .CustomerService_information_fuzhi {
+          position: absolute;
+          top: 50%;
+          right: pxTorem(17);
+          margin-top: pxTorem(-22);
+          width: pxTorem(88);
+          height: pxTorem(44);
+          background-color: #fba901;
+          color: black;
+          line-height: pxTorem(44);
+          border-radius: pxTorem(10);
+        }
+      }
+      .CustomerService_sure {
+        margin: pxTorem(30) auto 0 auto;
+        width: pxTorem(480);
+        height: pxTorem(88);
+        background-color: #fba901;
+        font-size: pxTorem(34);
+        line-height: pxTorem(88);
+        color: black;
+        border-radius: pxTorem(10);
+      }
+    }
+  }
+}
+
+.PaymentOrder {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  .userlogo {
+    height: pxTorem(284);
+    margin-top: 2.2rem;
+    background: #363636;
+    text-align: center;
+    margin-bottom: pxTorem(20);
+    h1 {
+      font-size: pxTorem(28);
+      color: #ffffff;
+      font-weight: normal;
+    }
+    p {
+      font-size: pxTorem(22);
+      color: #c9c9c9;
+      img {
+        height: pxTorem(120);
+        width: pxTorem(120);
+        border-radius: 50%;
+        border: 2px solid #FFA800;
+      }
+    }
+  }
+  .PaymentOrder_dateil {
+    padding: pxTorem(10) pxTorem(25);
+    background: #363636;
+    border-bottom: 1px solid #2d2d2d;
+    p {
+      float: left;
+      width: pxTorem(160);
+      height: pxTorem(160);
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    div {
+      margin-left: pxTorem(190);
+      color: #ffffff;
+      h1 {
+        font-size: pxTorem(28);
+        font-weight: normal;
+        margin-bottom: .5rem;
+        span {
+          float: right;
+        }
+      }
+      p {
+        float: none;
+        width: 100%;
+        height: 100%;
+        font-size: pxTorem(24);
+        color: #c9c9c9;
+      }
+    }
+  }
+  .PaymentOrder_problem {
+    padding: 0 pxTorem(25);
+    color: #ffffff;
+    font-size: pxTorem(24);
+    background: #363636;
+    ul {
+      li:first-child {
+        border-bottom: 1px solid #2D2D2D;
+      }
+      li {
+        padding: pxTorem(25) 0;
+      }
+    }
+  }
+  .PaymentBtn {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    background: #363636;
+    p {
+      font-size: pxTorem(28);
+      line-height: pxTorem(98);
+      padding-left: pxTorem(24);
+      color: #ffffff;
+      span {
+        margin-left: pxTorem(65);
+      }
+      button {
+        float: right;
+        width: pxTorem(320);
+        height: pxTorem(98);
+        border: 0;
+        background: #FFB800;
+        color: #2D2D2D;
+      }
+    }
+
+  }
+}
+
+.TheOrderDetails {
+  .userlogo {
+    height: pxTorem(450);
+    text-align: center;
+    margin-top: 2.2rem;
+    padding-top: pxTorem(70);
+    position: relative;
+    h2 {
+      font-weight: normal;
+      font-size: pxTorem(28);
+      color: #ffffff;
+    }
+    h1 {
+      font-size: pxTorem(34);
+      color: #ffffff;
+      font-weight: normal;
+    }
+    p {
+      font-size: pxTorem(22);
+      color: #c9c9c9;
+      img {
+        width: pxTorem(180);
+        height: pxTorem(180);
+        border-radius: 50%;
+        border: 2px solid #FFB800;
+        margin-bottom: pxTorem(20);
+      }
+
+    }
+    .goumaichengon {
+      position: absolute;
+      right: pxTorem(50);
+      bottom: pxTorem(-110);
+      width: pxTorem(280);
+      height: pxTorem(280);
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .TheOrderDetails_getAccount {
+    background: url("../accountNumber/imgaes/cilun.png") no-repeat 0% 100% #363636;
+    background-size: 100%;
+    text-align: center;
+    padding: pxTorem(40) 0 pxTorem(50) 0;
+    button {
+      width: pxTorem(300);
+      height: pxTorem(88);
+      background: #FFB800;
+      border-radius: 5px;
+      border: 0;
+    }
+  }
+  .TheOrderDetails_Details {
+    padding: pxTorem(30) pxTorem(25);
+    background: #444444;
+    color: #ffffff;
+    margin-top: pxTorem(20);
+    p {
+      font-size: pxTorem(24);
+      span {
+        float: right;
+      }
+    }
+    div {
+      margin-top: pxTorem(30);
+      border-top: 2px solid #575757;
+      border-bottom: 2px solid #575757;
+      padding: pxTorem(10) 0;
+      h1 {
+        padding-left: pxTorem(190);
+        font-weight: normal;
+        font-size: pxTorem(24);
+        margin-bottom: pxTorem(20);
+        span {
+          float: right;
+        }
+      }
+      p {
+        padding-left: pxTorem(190);
+
+      }
+      img {
+        float: left;
+        width: pxTorem(160);
+        height: pxTorem(160);
+      }
+    }
+    .RealPay {
+      text-align: right;
+      font-size: pxTorem(28);
+      padding-top: pxTorem(30);
+      span {
+        margin-left: pxTorem(85);
+      }
+    }
+
+  }
+  .accountNumberModel {
+    text-align: center;
+    position: absolute;
+    width: pxTorem(580);
+    border: 1px solid #FFA800;
+    border-radius: 5px;
+    top: pxTorem(250);
+    left: pxTorem(90);
+    background: #444;
+    padding-bottom: pxTorem(20);
+    h6 {
+      font-size: pxTorem(32);
+      color: #FFffff;
+      font-weight: normal;
+      text-align: center;
+      padding: pxTorem(25) 0;
+      border-bottom: 1px solid #c9c9c9;
+    }
+    div {
+      width: pxTorem(530);
+      margin: 0 auto;
+      color: #c9c9c9;
+      font-size: pxTorem(22);
+    }
+    p {
+      width: pxTorem(530);
+      height: pxTorem(90);
+      line-height: pxTorem(90);
+      padding: 0 5px;
+      background: #2D2D2D;
+      border-radius: 5px;
+      margin: pxTorem(15) auto;
+      color: #FFA800;
+      font-size: pxTorem(22);
+      span {
+        color: #FFffff;
+      }
+
+    }
+    button {
+      width: pxTorem(490);
+      border-radius: 5px;
+      background: #FFA800;
+      color: #2D2D2D;
+      border: 0;
+      padding: pxTorem(25) 0;
+
+    }
+  }
+}
+
+.myAllOrder {
+  header {
+    a {
+      img {
+        width: pxTorem(53);
+        height: pxTorem(46);
+      }
+    }
+  }
+  .buttons-tab {
+    background: #363636;
+    border-top: 1px solid #2D2D2D;
+    margin-bottom: pxTorem(20);
+    .button.active {
+      color: #ffffff;
+      border-color: #FFB800;
+    }
+    &::after {
+      background: transparent;
+    }
+  }
+  .content-block {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    ul {
+      li {
+        background: #444444;
+        p {
+          padding: pxTorem(30) pxTorem(25);
+          border-bottom: 2px solid #2D2D2D;
+          font-size: pxTorem(22);
+          span {
+            float: right;
+          }
+        }
+        div {
+          padding: pxTorem(20) pxTorem(25);
+          border-bottom: 2px solid #2D2D2D;
+
+          img {
+            width: pxTorem(180);
+            height: pxTorem(180);
+            float: left;
+          }
+          h1 {
+            font-size: pxTorem(28);
+            padding-left: pxTorem(205);
+            font-weight: normal;
+            span {
+              float: right;
+            }
+          }
+          p {
+            border: none;
+            padding: 0;
+            padding-left: pxTorem(205);
+            color: #b2b2b2;
+          }
+          a {
+            float: right;
+            font-size: pxTorem(28);
+            border: 1px solid #FFB800;
+            border-radius: 4px;
+            padding: 0 pxTorem(25);
+            margin-left: pxTorem(20);
+            color: #FFB800;
+          }
+        }
+      }
+    }
+  }
+  .myAllOrder_model {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+    .myAllOrder_content {
+      width: pxTorem(580);
+      height: pxTorem(640);
+      margin: 10rem auto;
+      border: 1px solid #FFA800;
+      border-radius: 5px;
+      background: #444444;
+      text-align: center;
+      h1 {
+        font-weight: normal;
+        font-size: pxTorem(34);
+        text-align: center;
+        border-bottom: 1px solid #b2b2b2;
+        color: #ffffff;
+        padding: pxTorem(25) 0;
+      }
+      p {
+        width: pxTorem(520);
+        padding: pxTorem(20) pxTorem(25);
+        border-radius: 5px;
+        background: #2D2D2D;
+        margin: 0 auto;
+        margin-top: pxTorem(20);
+        color: #ffffff;
+        font-size: pxTorem(22);
+        span {
+          color: #FFA800;
+        }
+        a {
+          float: right;
+          color: #2D2D2D;
+          width: pxTorem(88);
+          height: pxTorem(44);
+          background: #FFA800;
+          text-align: center;
+          border-radius: 5px;
+        }
+      }
+      i {
+        display: block;
+        color: #c9c9c9;
+        font-size: pxTorem(22);
+        width: pxTorem(520);
+        margin: 0 auto;
+        text-align: left;
+      }
+      button {
+        width: pxTorem(480);
+        height: pxTorem(88);
+        background: #FFA800;
+        border: 0;
+        border-radius: 5px;
+        margin-top: pxTorem(15);
+      }
+    }
+  }
+}
+

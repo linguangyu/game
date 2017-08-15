@@ -1,0 +1,114 @@
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.collectionList {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #2d2d2d;
+  top: 0;
+  left: 0;
+  .collectionList_header {
+    background-color: #444444;
+    .header_top {
+      line-height: 2.35rem;
+      height: 2.35rem;
+      position: relative;
+      text-align: center;
+      color: white;
+      font-size: 0.91rem;
+      img {
+        float: left;
+        margin: 0.64rem 0 0 0.6rem;
+        width: 1.17rem;
+        height: 1.17rem;
+      }
+      p {
+        float: right;
+        font-size: 0.59rem;
+        color: #b2b2b2;
+      }
+    }
+  }
+  .collectionList_all {
+    height: 34.2rem;
+    .cardInquiries_list {
+      height: 5.97rem;
+      background-color: #444444;
+      margin: 0.8rem 0.64rem 0.53rem 0.64rem;
+      border-radius: 10px;
+      position: relative;
+      .list_left {
+        margin-left: 0.53rem;
+        display: inline-block;
+        vertical-align: top;
+        img {
+          width: 4rem;
+          height: 5.65rem;
+        }
+      }
+      .list_right {
+        margin-left: 0.53rem;
+        color: #b2b2b2;
+        display: inline-block;
+        .right_top {
+          margin: 0.5rem 0 1.39rem 0;
+          .top_name {
+            color: white;
+            font-size: 14px;
+            line-height: 14px;
+          }
+          .top_e {
+            margin: 0.32rem 0 0.53rem 0;
+            font-size: 10px;
+            line-height: 10px;
+          }
+        }
+        .right-bottom {
+          font-size: 12px;
+          line-height: 12px;
+          p {
+            margin-bottom: 0.32rem;
+          }
+        }
+      }
+      .list_shoucang {
+        position: absolute;
+        top: 0.37rem;
+        right: 0;
+        width: 3.07rem;
+        height: 1.17rem;
+        line-height: 1.17rem;
+        background: url("./imgaes/shoucbg.png") no-repeat top left;
+        -webkit-background-size: 3.07rem 1.17rem;
+        background-size: 3.07rem 1.17rem;
+        color: #ffdfb8;
+        font-size: 0.64rem;
+
+        img {
+          margin: 0 0.32rem 0 0.32rem;
+          width: 0.64rem;
+          height: 0.59rem;
+        }
+
+      }
+      .list_shoucang_series {
+        position: absolute;
+        bottom: 0.53rem;
+        right: 0.53rem;
+        color: #c9c9c9;
+        font-size: 10px;
+      }
+    }
+
+  }
+}

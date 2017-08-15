@@ -1,0 +1,175 @@
+diff a/.idea/workspace.xml b/.idea/workspace.xml	(rejected hunks)
+@@ -31,172 +31,10 @@
+     <fileColor scope="Non-Project Files (Material Palenight)" color="4E5579" />
+   </component>
+   <component name="FileEditorManager">
+-    <splitter split-orientation="horizontal" split-proportion="0.5">
+-      <split-first>
+-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+-          <file leaf-file-name="cardInquiries.vue" pinned="false" current-in-tab="false">
+-            <entry file="file://$PROJECT_DIR$/src/page/cardInquiries/cardInquiries.vue">
+-              <provider selected="true" editor-type-id="text-editor">
+-                <state relative-caret-position="275">
+-                  <caret line="35" column="114" lean-forward="false" selection-start-line="35" selection-start-column="114" selection-end-line="35" selection-end-column="114" />
+-                  <folding>
+-                    <element signature="n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+-                    <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+-                    <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+-                    <element signature="n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+-                    <element signature="n#style#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+-                    <element signature="n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+-                    <element signature="n#mugen-scroll#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+-                    <element signature="n#div#2;n#div#0;n#template#0;n#!!top" expanded="false" />
+-                    <element signature="n#div#3;n#div#0;n#template#0;n#!!top" expanded="false" />
+-                    <element signature="n#div#0;n#div#1;n#div#5;n#div#0;n#template#0;n#!!top" expanded="false" />
+-                    <element signature="n#div#6;n#div#0;n#template#0;n#!!top" expanded="false" />
+-                    <element signature="e#7376#7432#0" expanded="true" />
+-                    <element signature="e#8230#9358#0" expanded="false" />
+-                    <element signature="e#8246#8354#0" expanded="false" />
+-                    <element signature="e#9378#10458#0" expanded="false" />
+-                    <element signature="e#10480#11050#0" expanded="false" />
+-                    <element signature="e#11070#11957#0" expanded="false" />
+-                    <element signature="e#11981#12349#0" expanded="false" />
+-                    <element signature="e#12376#13358#0" expanded="false" />
+-                    <element signature="e#13383#14333#0" expanded="false" />
+-                    <element signature="e#15902#16050#0" expanded="false" />
+-                    <element signature="e#16090#16130#0" expanded="false" />
+-                    <element signature="e#16177#16266#0" expanded="false" />
+-                    <element signature="e#16314#17025#0" expanded="false" />
+-                    <element signature="e#17068#18684#0" expanded="false" />
+-                    <element signature="e#17426#17468#0" expanded="false" />
+-                    <element signature="e#17499#17538#0" expanded="false" />
+-                    <element signature="e#17571#17612#0" expanded="false" />
+-                    <element signature="e#17643#17682#0" expanded="false" />
+-                    <element signature="e#17717#17760#0" expanded="false" />
+-                    <element signature="e#17798#17844#0" expanded="false" />
+-                    <element signature="e#18713#18787#0" expanded="false" />
+-                    <element signature="e#18829#19059#0" expanded="false" />
+-                    <element signature="e#19098#19387#0" expanded="false" />
+-                    <element signature="e#19419#20413#0" expanded="false" />
+-                    <element signature="e#20449#21255#0" expanded="false" />
+-                    <element signature="e#21297#21509#0" expanded="false" />
+-                    <element signature="e#21548#21747#0" expanded="false" />
+-                    <element signature="e#21793#21991#0" expanded="false" />
+-                    <element signature="e#22038#22151#0" expanded="false" />
+-                    <element signature="e#22180#22918#0" expanded="false" />
+-                    <element signature="e#22935#23679#0" expanded="false" />
+-                    <element signature="e#23694#24432#0" expanded="false" />
+-                    <element signature="e#24449#25193#0" expanded="false" />
+-                    <element signature="e#25208#25946#0" expanded="false" />
+-                    <element signature="e#25385#25880#0" expanded="false" />
+-                    <element signature="e#25961#26699#0" expanded="false" />
+-                    <element signature="e#26031#26113#0" expanded="false" />
+-                    <element signature="e#26715#27456#0" expanded="false" />
+-                    <element signature="e#27472#28213#0" expanded="false" />
+-                    <element signature="e#28228#28966#0" expanded="false" />
+-                    <element signature="e#28980#29711#0" expanded="false" />
+-                    <element signature="e#29725#30457#0" expanded="false" />
+-                    <element signature="e#31789#32509#0" expanded="false" />
+-                    <element signature="e#32552#32613#0" expanded="false" />
+-                    <element signature="e#32658#33397#0" expanded="false" />
+-                    <element signature="e#33435#33872#0" expanded="false" />
+-                    <element signature="e#33931#34448#0" expanded="false" />
+-                    <element signature="e#34514#34813#0" expanded="false" />
+-                    <element signature="e#34866#34960#0" expanded="false" />
+-                  </folding>
+-                </state>
+-              </provider>
+-            </entry>
+-          </file>
+-          <file leaf-file-name="collectionList.vue" pinned="false" current-in-tab="false">
+-            <entry file="file://$PROJECT_DIR$/src/page/cardInquiries/collectionList.vue">
+-              <provider selected="true" editor-type-id="text-editor">
+-                <state relative-caret-position="350">
+-                  <caret line="14" column="51" lean-forward="false" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+-                  <folding>
+-                    <element signature="n#style#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+-                    <element signature="n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="false" />
+-                  </folding>
+-                </state>
+-              </provider>
+-            </entry>
+-          </file>
+-          <file leaf-file-name="singleCardDetails.vue" pinned="false" current-in-tab="true">
+-            <entry file="file://$PROJECT_DIR$/src/page/cardInquiries/singleCardDetails.vue">
+-              <provider selected="true" editor-type-id="text-editor">
+-                <state relative-caret-position="225">
+-                  <caret line="26" column="37" lean-forward="false" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+-                  <folding />
+-                </state>
+-              </provider>
+-            </entry>
+-          </file>
+-          <file leaf-file-name="singleCardDetails.scss" pinned="false" current-in-tab="false">
+-            <entry file="file://$PROJECT_DIR$/src/page/cardInquiries/singleCardDetails.scss">
+-              <provider selected="true" editor-type-id="text-editor">
+-                <state relative-caret-position="525">
+-                  <caret line="21" column="12" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+-                  <folding />
+-                </state>
+-              </provider>
+-            </entry>
+-          </file>
+-          <file leaf-file-name="router.js" pinned="false" current-in-tab="false">
+-            <entry file="file://$PROJECT_DIR$/src/router/router.js">
+-              <provider selected="true" editor-type-id="text-editor">
+-                <state relative-caret-position="312">
+-                  <caret line="45" column="16" lean-forward="false" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="16" />
+-                  <folding />
+-                </state>
+-              </provider>
+-            </entry>
+-          </file>
+-          <file leaf-file-name="searchCard.vue" pinned="false" current-in-tab="false">
+-            <entry file="file://$PROJECT_DIR$/src/page/cardInquiries/searchCard.vue">
+-              <provider selected="true" editor-type-id="text-editor">
+-                <state relative-caret-position="325">
+-                  <caret line="13" column="82" lean-forward="false" selection-start-line="13" selection-start-column="82" selection-end-line="13" selection-end-column="82" />
+-                  <folding>
+-                    <element signature="e#844#1250#0" expanded="false" />
+-                    <element signature="e#1348#1583#0" expanded="false" />
+-                  </folding>
+-                </state>
+-              </provider>
+-            </entry>
+-          </file>
+-          <file leaf-file-name="game.vue" pinned="false" current-in-tab="false">
+-            <entry file="file://$PROJECT_DIR$/src/page/market/game.vue">
+-              <provider selected="true" editor-type-id="text-editor">
+-                <state relative-caret-position="326">
+-                  <caret line="93" column="83" lean-forward="false" selection-start-line="92" selection-start-column="47" selection-end-line="93" selection-end-column="83" />
+-                  <folding />
+-                </state>
+-              </provider>
+-            </entry>
+-          </file>
+-        </leaf>
+-      </split-first>
+-      <split-second>
+-        <leaf>
+-          <file leaf-file-name="singleCardDetails.scss" pinned="false" current-in-tab="true">
+-            <entry file="file://$PROJECT_DIR$/src/page/cardInquiries/singleCardDetails.scss">
+-              <provider selected="true" editor-type-id="text-editor">
+-                <state relative-caret-position="376">
+-                  <caret line="102" column="23" lean-forward="true" selection-start-line="102" selection-start-column="23" selection-end-line="102" selection-end-column="23" />
+-                  <folding />
+-                </state>
+-              </provider>
+-            </entry>
+-          </file>
+-        </leaf>
+-      </split-second>
+-    </splitter>
++    <leaf />
+   </component>
+   <component name="FindInProjectRecents">
+     <findStrings>
+-      <find>localStorage</find>
+-      <find>con</find>
+-      <find>cons</find>
+-      <find>console</find>
+-      <find>SearchCardname</find>
+-      <find>replace</find>
+       <find>slice</find>
+       <find>inputText</find>
+       <find>searchReturns</find>

@@ -1,0 +1,282 @@
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.singleCardDetails {
+  width: 100%;
+  height: 100%;
+  background-color: #2d2d2d;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.32rem;
+  color: white;
+  z-index: 2;
+  .singleCardDetails_header {
+    .header_top {
+      text-align: center;
+      height: 2.35rem;
+      background-color: #444444;
+      line-height: 2.35rem;
+      color: white;
+      position: relative;
+      .topreturn{
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: left;
+        display: inline-block;
+        width: 2.67rem;
+        height: 2.35rem;
+        img {
+          margin: 0.56rem 0 0 0.4rem;
+          float: left;
+          height: 1.17rem;
+          width: 1.17rem;
+        }
+      }
+
+      p {
+        font-size: 0.91rem;
+      }
+    }
+    .header_bottom {
+      height: 2.35rem;
+      background-color: #444444;
+      .bottom_left {
+        margin-left: 0.64rem;
+        float: left;
+        height: 2.35rem;
+        font-size: 0;
+        position: relative;
+        .left_text {
+          font-size: 14px;
+          display: inline-block;
+          line-height: 2.35rem;
+
+
+        }
+      }
+      .bottom_right {
+        float: right;
+        text-align: right;
+        margin: 0.35rem 0.64rem 0 0;
+        .hahah{
+          display: inline-block;
+          width: 1.23rem;
+          height:1.07rem;
+          vertical-align: top;
+          background: url("./imgaes/f0.png") top left no-repeat;
+          -webkit-background-size:1.23rem 1.07rem;
+          background-size:1.23rem 1.07rem;
+
+        }
+        .hahah1{
+          background: url("./imgaes/f1.png") top left no-repeat;
+          -webkit-background-size:1.23rem 1.07rem;
+          background-size:1.23rem 1.07rem;
+        }
+        .hahah2{
+          background: url("./imgaes/f2.png") top left no-repeat;
+          -webkit-background-size:1.23rem 1.07rem;
+          background-size:1.23rem 1.07rem;
+        }
+        .hahah3{
+          background: url("./imgaes/f3.png") top left no-repeat;
+          -webkit-background-size:1.23rem 1.07rem;
+          background-size:1.23rem 1.07rem;
+        }
+        .hahah4{
+          background: url("./imgaes/f4.png") top left no-repeat;
+          -webkit-background-size:1.23rem 1.07rem;
+          background-size:1.23rem 1.07rem;
+        }
+        .hahah5{
+          background: url("./imgaes/f5.png") top left no-repeat;
+          -webkit-background-size:1.23rem 1.07rem;
+          background-size:1.23rem 1.07rem;
+        }
+        .hahah6{
+          background: url("./imgaes/f6.png") top left no-repeat;
+          -webkit-background-size:1.23rem 1.07rem;
+          background-size:1.23rem 1.07rem;
+        }
+        .hahah7{
+          background: url("./imgaes/f7.png") top left no-repeat;
+          -webkit-background-size:1.23rem 1.07rem;
+          background-size:1.23rem 1.07rem;
+        }
+        .hahah8{
+          background: url("./imgaes/f8.png") top left no-repeat;
+          -webkit-background-size:1.23rem 1.07rem;
+          background-size:1.23rem 1.07rem;
+        }
+        .hahah9{
+          background: url("./imgaes/f9.png") top left no-repeat;
+          -webkit-background-size:1.23rem 1.07rem;
+          background-size:1.23rem 1.07rem;
+        }
+        p:first-child {
+          font-size: 11px;
+          color: white;
+          line-height: 1.07rem;
+        }
+        p:last-child {
+          font-size: 10px;
+          color: #c3c3c3;
+          line-height: 10px;
+        }
+      }
+    }
+  }
+  .singleCardDetails_bg {
+    width: 14.4rem;
+    height: 20.27rem;
+    margin: 0.56rem auto 0 auto;
+    position: relative;
+    z-index: 1;
+    .dabg{
+      width: 14.4rem;
+      height: 20.27rem;
+    }
+    .xuangguang{
+      position: absolute;
+      top: 18.75rem;
+      right: 0;
+      width: 12.11rem;
+      height: 2.4rem;
+    }
+
+  }
+  .singleCardDetails_footer {
+    position: relative;
+    .footer_top {
+      min-height: 8rem;
+      margin: -0.8rem 0.67rem 0 0.67rem;
+      background-color: #444444;
+      border-radius: 10px;
+      position: relative;
+
+      .top_header {
+        padding-top: 1.65rem;
+        height: 4rem;
+        margin: 0 0.64rem;
+        border-bottom: 1px solid #2d2d2d;
+        .top_header_left {
+          float: left;
+          p{
+            margin-top: 0.56rem;
+            font-size: 14px;
+            line-height: 14px;
+          }
+        }
+        .top_header_right {
+          float: right;
+          text-align: right;
+          p {
+            font-size: 11px;
+            line-height: 11px;
+            color: #b2b2b2;
+          }
+          p:first-child {
+            margin-bottom: 0.32rem;
+          }
+        }
+        .top_header_bian {
+          position: absolute;
+          top: 1.55rem;
+          left: 0;
+          background-color: #fba601;
+          height: 1.81rem;
+          width: 0.21rem;
+          border-radius: 0 2.5px 2.5px 0;
+        }
+      }
+      .top_center {
+        word-wrap: break-word;
+        word-break: normal;
+        font-size: 11px;
+      }
+    }
+    .footer_bottom {
+      height: 2.35rem;
+      background-color: #444444;
+      margin: 2px 0.67rem 0 0.67rem;
+      border-radius: 10px;
+      display: flex;
+      text-align: center;
+      .bottom_left {
+        flex: 1;
+        height: 1.55rem;
+        line-height: 2.35rem;
+        border-right: 1px solid #2d2d2d;
+        margin-top: 0.45rem;
+        p:first-child {
+          font-size: 12px;
+          line-height: 12px;
+        }
+        p:last-child {
+          padding-top: 0.29rem;
+          font-size: 10px;
+          line-height: 10px;
+          color: #b2b2b2;
+        }
+      }
+      .bottom_right {
+        flex: 1;
+        p:first-child {
+          padding-top: 0.45rem;
+          font-size: 12px;
+          line-height: 12px;
+          .hahah{
+
+          }
+          &.hahah0{
+          }
+          &.hahah1{
+
+          }
+          &.hahah2{
+
+          }
+          &.hahah3{
+
+          }
+          &.hahah4{
+
+          }
+          &.hahah5{
+
+          }
+          &.hahah6{
+
+          }
+          &.hahah7{
+
+          }
+          &.hahah8{
+
+          }
+          &.hahah9{
+
+          }
+
+        }
+        p:last-child {
+          padding-top: 0.29rem;
+          font-size: 10px;
+          line-height: 10px;
+          color: #b2b2b2;
+        }
+      }
+    }
+  }
+}

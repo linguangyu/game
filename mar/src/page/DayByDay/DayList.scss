@@ -1,0 +1,141 @@
+@import "./min";
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.DayList {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #2d2d2d;
+  top: 0;
+  left: 0;
+  .DayList_header {
+    background-color: #444444;
+    .header_top {
+      line-height: 2.35rem;
+      height: 2.35rem;
+      position: relative;
+      text-align: center;
+      color: white;
+      font-size: 0.91rem;
+      img {
+        float: left;
+        margin: 0.64rem 0 0 0.6rem;
+        width: 1.17rem;
+        height: 1.17rem;
+      }
+      p {
+        float: right;
+        font-size: 0.59rem;
+        color: #b2b2b2;
+      }
+    }
+
+  }
+  .DayByDay_all {
+    .D_all_list {
+      background-color: #444444;
+      .D_all_list_title {
+        display: flex;
+        border-bottom: 1px solid #575757;
+        margin: 0 pxTorem(24);
+        .D_all_list_title_left {
+          flex: 1;
+          color: white;
+          .D_all_list_title_left_name {
+            float: left;
+            margin-left: pxTorem(24);
+            line-height:pxTorem(95);
+            .loveGray {
+              display: inline-block;
+              width: pxTorem(32);
+              height: pxTorem(30);
+              background: url("./imgaes/aixinhei.png")no-repeat left top;
+              -webkit-background-size:pxTorem(32) pxTorem(30);;
+              background-size:pxTorem(32) pxTorem(30);
+
+            }
+            .loveGrayShow {
+              display: inline-block;
+              width: pxTorem(32);
+              height: pxTorem(30);
+              background: url("./imgaes/aixin.png")no-repeat left top;
+              -webkit-background-size:pxTorem(32) pxTorem(30);;
+              background-size:pxTorem(32) pxTorem(30);
+            }
+            p {
+              margin-left: pxTorem(20);
+              display: inline-block;
+              font-size: pxTorem(28);
+              line-height:pxTorem(95);
+              vertical-align: top;
+            }
+          }
+          .D_all_list_title_left_price {
+            float: right;
+            text-align: right;
+            p {
+              margin-right: pxTorem(26);
+            }
+            p:first-child {
+              margin: pxTorem(17) pxTorem(26) pxTorem(10) 0;
+              font-size: pxTorem(28);
+              line-height: pxTorem(28);
+              color: white;
+            }
+            p:last-child {
+              font-size: pxTorem(22);
+              line-height: pxTorem(22);
+              color: #b2b2b2;
+            }
+          }
+        }
+        .D_all_list_title_right {
+          flex: 0 0 5.07rem;
+          color: white;
+          text-align: center;
+          margin-right:pxTorem(-24);
+          position: relative;
+          div{
+            position: absolute;
+            top: 50%;
+            left: 0;
+            margin-top:pxTorem(-22);
+            width: pxTorem(2);
+            height:pxTorem(44);
+            background-color: #0f1117;
+          }
+          img {
+            width: pxTorem(40);
+            height: pxTorem(20);
+          }
+          p {
+            font-size: pxTorem(22);
+            color: #b2b2b2;
+          }
+        }
+      }
+      .D_all_list_more{
+        color: white;
+        font-size:pxTorem(22);
+        text-align: right;
+        margin-right:pxTorem(27);
+        p{
+          vertical-align: top;
+        }
+        span{
+          vertical-align: top;
+        }
+      }
+    }
+  }
+
+}

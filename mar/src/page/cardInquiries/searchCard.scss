@@ -1,0 +1,120 @@
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.searchCard {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #2d2d2d;
+  top: 2.35rem;
+  left: 0;
+  z-index: 2;
+  .searchCard_header {
+    display: flex;
+    line-height: 2.35rem;
+    background-color: #444444;
+    position: relative;
+    .top_left {
+      text-align: left;
+      float: left;
+      img {
+        margin-left: 0.6rem;
+        width: 1.17rem;
+        height: 1.17rem;
+      }
+    }
+    .top_center {
+      position: absolute;
+      left: 50%;
+      margin: 0 2.53rem 0 -7.465rem;
+      .form_input {
+        box-sizing: border-box;
+        text-align: left;
+        height: 1.73rem;
+        border-radius: 0.21rem;
+        border: 1px solid #aaaaaa;
+        color: #868686;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        display: block;
+        outline: 0;
+        padding: 0 0 0 2.27rem;
+        text-decoration: none;
+        width: 14.93rem;
+        background: #363636;
+        font-size: 12px;
+        margin-top: 0.43rem;
+      }
+      .form_input:focus {
+        border: 0.05rem solid #ffa800;
+      }
+      img {
+        position: absolute;
+        top: 0.72rem;
+        left: 0.56rem;
+        width: 1.17rem;
+        height: 1.17rem;
+
+      }
+    }
+  }
+  .searchCard_all {
+    margin-top:0.64rem;
+    color: #acacac;
+    font-size:0.59rem;
+    .all_title {
+      display: flex;
+      text-align: center;
+      line-height:1.17rem;
+      border-top: 1px solid #424242;
+      border-bottom: 1px solid #424242;
+      .all_title_left {
+        margin-top:0.29rem;
+        flex: 1;
+        height: 0.59rem;
+        line-height:0.59rem;
+        border-right: 1px solid #424242;
+
+      }
+      .all_title_right {
+        flex: 1;
+      }
+    }
+    .all_searchList{
+      margin: 0 1.57rem;
+      text-align: center;
+      min-height: 1.87rem;
+      .list_ones{
+        padding: 0  0.8rem;
+        display: inline-block;
+        background-color: #444444;
+        margin: 0.32rem;
+      }
+    }
+    .all_popularSearches{
+      text-align: center;
+      border-top: 1px solid #424242;
+      border-bottom: 1px solid #424242;
+    }
+    .popularSearches_List{
+      margin: 0 1.57rem;
+      text-align: center;
+      .list_ones{
+        padding: 0  0.8rem;
+        display: inline-block;
+        background-color: #444444;
+        margin: 0.32rem;
+
+      }
+    }
+  }
+}

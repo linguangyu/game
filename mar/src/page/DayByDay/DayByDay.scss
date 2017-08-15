@@ -1,0 +1,216 @@
+@import "./min";
+
+
+
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.DayByDay {
+  .DayByDay_header {
+    background-color: #444444;
+    margin-bottom: pxTorem(30);
+    .header_top {
+      display: flex;
+      line-height: 2.35rem;
+      position: relative;
+      .top_left {
+        flex: 0 0 2.53rem;
+        text-align: left;
+        img {
+          margin-left: 0.6rem;
+          width: 1.17rem;
+          height: 1.17rem;
+        }
+      }
+      .top_center {
+        flex: 1;
+        position: absolute;
+        left: 50%;
+        margin: 0 2.53rem 0 -7.465rem;
+        .form_input {
+          box-sizing: border-box;
+          text-align: left;
+          height: 1.73rem;
+          border-radius: 0.21rem;
+          border: 1px solid #aaaaaa;
+          color: #868686;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          display: block;
+          outline: 0;
+          padding: 0 0 0 2.27rem;
+          text-decoration: none;
+          width: 14.53rem;
+          background: #363636;
+          font-size: 12px;
+          margin-top: 0.43rem;
+        }
+        .form_input:focus {
+          border: 0.05rem solid #ffa800;
+        }
+        img {
+          position: absolute;
+          top: 0.72rem;
+          left: 0.56rem;
+          width: 1.17rem;
+          height: 1.17rem;
+
+        }
+      }
+      .top_right {
+
+        flex: 0 0 2.53rem;
+        text-align: right;
+        position: absolute;
+        top: 0;
+        right: 0;
+        img {
+          width: 22px;
+          height: 20px;
+          position: absolute;
+          top: 0.77rem;
+          right: 0.91rem
+        }
+        .top_collection {
+          width: 24px;
+          height: 16px;
+          padding-top: 3px;
+          font-size: 10px;
+          line-height: 10px;
+          color: white;
+          text-align: center;
+          background: url("./imgaes/collection.png") no-repeat;
+          background-size: 24px 16px;
+          position: absolute;
+          top: 1.2rem;
+          right: 0.64rem;
+
+          p {
+            span {
+              font-size: 9px;
+            }
+          }
+        }
+      }
+
+    }
+  }
+  .DayByDay_all {
+    height: pxTorem(1230);
+    .D_all_list {
+      background-color: #444444;
+      border-bottom: 1px solid #000;
+      .D_all_list_title {
+        display: flex;
+
+        .D_all_list_title_left {
+          flex: 1;
+          color: white;
+          .D_all_list_title_left_name {
+            float: left;
+            margin-left: pxTorem(24);
+            line-height:pxTorem(95);
+            .loveGray {
+              display: inline-block;
+              width: pxTorem(32);
+              height: pxTorem(30);
+              background: url("./imgaes/aixinhei.png")no-repeat left top;
+              -webkit-background-size:pxTorem(32) pxTorem(30);;
+              background-size:pxTorem(32) pxTorem(30);
+            }
+            .loveGrayShow {
+              display: inline-block;
+              width: pxTorem(32);
+              height: pxTorem(30);
+              background: url("./imgaes/aixin.png")no-repeat left top;
+              -webkit-background-size:pxTorem(32) pxTorem(30);;
+              background-size:pxTorem(32) pxTorem(30);
+            }
+            p {
+              display: inline-block;
+              font-size: pxTorem(28);
+              line-height:pxTorem(95);
+              vertical-align: top;
+            }
+          }
+          .D_all_list_title_left_price {
+            float: right;
+            text-align: right;
+            p {
+              margin-right: pxTorem(12);
+            }
+            p:first-child {
+              margin: pxTorem(17) pxTorem(12) pxTorem(10) 0;
+              font-size: pxTorem(28);
+              line-height: pxTorem(28);
+              color: white;
+            }
+            p:last-child {
+              font-size: pxTorem(22);
+              line-height: pxTorem(22);
+              color: #b2b2b2;
+            }
+          }
+        }
+        .D_all_list_title_right {
+          flex: 0 0 5.07rem;
+          color: white;
+          text-align: center;
+          position: relative;
+          div{
+            position: absolute;
+            top: 50%;
+            left: 0;
+            margin-top:pxTorem(-22);
+            width: pxTorem(2);
+            height:pxTorem(44);
+            background-color: #0f1117;
+          }
+          img {
+            width: pxTorem(40);
+            height: pxTorem(20);
+          }
+          p {
+            font-size: pxTorem(22);
+            color: #b2b2b2;
+          }
+        }
+      }
+      .D_all_list_more{
+        color: white;
+        font-size:pxTorem(22);
+        text-align: right;
+        margin-right:pxTorem(27);
+        p{
+          vertical-align: top;
+        }
+        span{
+          vertical-align: top;
+        }
+      }
+    }
+  }
+  .cardInquiries_Nothing {
+    width: 100%;
+    height: 100%;
+    margin-top: 15rem;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fba601;
+    p {
+      display: inline-block;
+      width: 80%;
+    }
+  }
+}

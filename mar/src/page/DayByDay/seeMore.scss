@@ -1,0 +1,250 @@
+@import "./min";
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.seeMore {
+  width: 100%;
+  height: 100%;
+  background-color: #2d2d2d;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.32rem;
+  color: white;
+  z-index: 2;
+  .seeMore_header {
+    .header_top {
+      text-align: center;
+      height: 2.35rem;
+      background-color: #444444;
+      line-height: 2.35rem;
+      color: white;
+      position: relative;
+      .topreturn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: left;
+        display: inline-block;
+        width: 2.67rem;
+        height: 2.35rem;
+        img {
+          margin: 0.56rem 0 0 0.4rem;
+          float: left;
+          height: 1.17rem;
+          width: 1.17rem;
+        }
+      }
+      p {
+        font-size: 0.91rem;
+      }
+    }
+
+  }
+  .seeMore_time {
+    background-color: #444444;
+    margin-bottom: pxTorem(30);
+    .seeMore_time_title {
+      display: flex;
+      color: #acacac;
+      text-align: center;
+      .seeMore_time_title_left {
+        display: inline-block;
+        flex: 1;
+        .time_title_left_text {
+          margin: 0 pxTorem(21) 0 0;
+          display: inline-block;
+          font-size: pxTorem(22);
+        }
+        .time_title_left_vie {
+          display: inline-block;
+          width: pxTorem(240);
+          height: pxTorem(44);
+          position: relative;
+          .form_input {
+            box-sizing: border-box;
+            text-align: center;
+            border: 1px solid #2d2d2d;
+            color: white;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            display: block;
+            outline: 0;
+            text-decoration: none;
+            width: pxTorem(240);
+            height: pxTorem(44);
+            background: #363636;
+            font-size: 12px;
+          }
+          .form_input:focus {
+            border: 0.05rem solid #ffa800;
+          }
+          ::-webkit-input-placeholder { /* WebKit browsers */
+            color:    white;
+          }
+          :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+            color:    white;
+            opacity:  1;
+          }
+          ::-moz-placeholder { /* Mozilla Firefox 19+ */
+            color:    white;
+            opacity:  1;
+          }
+          :-ms-input-placeholder { /* Internet Explorer 10+ */
+            color:    white;
+          }
+          div {
+            position: absolute;
+            right: pxTorem(4);
+            bottom: pxTorem(4);
+            width: pxTorem(10);
+            height: pxTorem(10);
+            background: url("./imgaes/xiaoshangjiao.png") no-repeat bottom right;
+            background-size: pxTorem(10) pxTorem(10);
+          }
+        }
+      }
+      .seeMore_time_title_center {
+        flex: 0 0 pxTorem(61);
+        display: inline-block;
+        img {
+          width: pxTorem(61);
+          height: pxTorem(9);
+
+        }
+      }
+      .seeMore_time_title_right {
+        flex: 1;
+        display: inline-block;
+        .time_title_right_text {
+          margin: 0 pxTorem(21) 0 0;
+
+          display: inline-block;
+          font-size: pxTorem(22);
+
+        }
+        .time_title_right_vie {
+          display: inline-block;
+          width: pxTorem(240);
+          height: pxTorem(44);
+          background-color: #2d2d2d;
+          position: relative;
+          text-align: center;
+          .form_input {
+            box-sizing: border-box;
+            text-align: center;
+            border: 1px solid #2d2d2d;
+            color: white;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            display: block;
+            outline: 0;
+            text-decoration: none;
+            width: pxTorem(240);
+            height: pxTorem(44);
+            background: #363636;
+            font-size: 12px;
+          }
+          .form_input:focus {
+            border: 0.05rem solid #ffa800;
+          }
+          ::-webkit-input-placeholder { /* WebKit browsers */
+            color:    white;
+          }
+          :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+            color:    white;
+            opacity:  1;
+          }
+          ::-moz-placeholder { /* Mozilla Firefox 19+ */
+            color:    white;
+            opacity:  1;
+          }
+          :-ms-input-placeholder { /* Internet Explorer 10+ */
+            color:    white;
+          }
+          div {
+            position: absolute;
+            right: pxTorem(4);
+            bottom: pxTorem(4);
+            width: pxTorem(10);
+            height: pxTorem(10);
+            background: url("./imgaes/xiaoshangjiao.png") no-repeat bottom right;
+            background-size: pxTorem(10) pxTorem(10);
+          }
+        }
+      }
+    }
+    .charts2 {
+      #myChart2 {
+        margin: 0 auto;
+        width: pxTorem(700);
+        height: pxTorem(260);
+      }
+    }
+    .seeMore_tiem_new{
+      color: white;
+      font-size:pxTorem(22);
+      text-align: right;
+      margin-right:pxTorem(27);
+    }
+  }
+  .seeMore_list {
+    background-color: #444444;
+    height: pxTorem(900);
+    .seeMore_list_price {
+      display: flex;
+      background-color: #444444;
+      border-top: 1px solid #0f1117;
+      color: white;
+      height: pxTorem(88);
+      line-height: pxTorem(88);
+      font-size: pxTorem(28);
+      .list_price_left {
+        flex: 1;
+        display: inline-block;
+        text-align: left;
+        line-height:pxTorem(88);
+        margin-left:pxTorem(24);
+      }
+      .list_price_center {
+        flex: 0 0 pxTorem(210);
+        display: inline-block;
+        text-align: center;
+        .price_center_top {
+          font-size: pxTorem(20);
+          color: #b2b2b2;
+          line-height:pxTorem(20);
+          margin: pxTorem(14) 0 pxTorem(11) 0;
+        }
+        .price_center_button {
+          line-height:pxTorem(28);
+        }
+      }
+      .list_price_right {
+        flex: 0 0 pxTorem(140);
+        display: inline-block;
+        text-align: right;
+        line-height:pxTorem(88);
+        margin-right:pxTorem(42);
+        .price_right_left {
+          display: inline-block;
+        }
+        .price_right_right {
+          display: inline-block;
+        }
+      }
+    }
+    .seeMore_list_price:last-child{
+      border-bottom: 1px solid #0f1117;
+    }
+  }
+}

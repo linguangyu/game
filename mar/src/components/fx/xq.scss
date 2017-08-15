@@ -1,0 +1,66 @@
+@import "../../assets/css/min.scss";
+
+.xq {
+  position: relative;
+  width: pxTorem(750);
+  margin: 0 auto;
+  .xqbg {
+    max-width: pxTorem(750);
+    height: pxTorem(1334);
+    img {
+      width: pxTorem(750);
+    }
+    .xq_text {
+      position: absolute;
+      top: pxTorem(940);
+      left: pxTorem(130);
+      width: pxTorem(550);
+      height: pxTorem(135);
+      .xq_touxiang {
+        display: inline-block;
+        width: pxTorem(83);
+        height: pxTorem(83);
+        background-color: greenyellow;
+        border-radius: 50%;
+        vertical-align: top;
+        img {
+          width: pxTorem(83);
+          height: pxTorem(83);
+        }
+      }
+      .xq_neirong {
+        vertical-align: top;
+        display: inline-block;
+        width: pxTorem(430);
+        color: white;
+        margin-left: pxTorem(50);
+        p {
+          font-size: pxTorem(22);
+        }
+      }
+    }
+  }
+  .xq_top {
+    .xq_fanhui {
+      position: absolute;
+      top: pxTorem(20);
+      left: pxTorem(25);
+      img {
+        width: pxTorem(88);
+        height: pxTorem(88);
+      }
+    }
+    .xq_denglu {
+      position: fixed;
+      top: pxTorem(20);
+      right: pxTorem(20);
+      img {
+        width: pxTorem(246);
+        height: pxTorem(88);
+      }
+    }
+
+  }
+
+
+}
